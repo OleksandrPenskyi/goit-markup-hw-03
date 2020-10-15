@@ -55,7 +55,8 @@ h3 {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.logo-web {
+
+.logo .web {
   color: var(--main-blue-color);
 }
 
@@ -197,9 +198,7 @@ footer {
   background: var(--bg-main-color);
 }
 
-.logo .web {
-  color: var(--main-blue-color);
-}
+
 
 .logo .studio-white {
   color: var(--third-text-color);
