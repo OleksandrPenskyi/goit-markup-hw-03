@@ -367,6 +367,7 @@ height: 404px;
 }
 
 .examples-link {
+  display: inline-block;
   text-decoration: none;
 }
 
