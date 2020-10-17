@@ -4,8 +4,6 @@
 /* Цвет конопок, вспомогательный цвет  #ffffff */
 /* основной синий цвет, для ховерка и фокуса  #2196f3 */
 
-
-
 /* Project fonts */
 /* font-family: Roboto;
 font-style: normal;
@@ -32,9 +30,9 @@ font-weight: 700; */
   --secondary-text-color: #757575;
   --third-text-color: #ffffff;
   --main-blue-color: #2196f3;
-  --bg-main-color:#2f303a;
-  --bg-secondary-color: #F5F4FA;
-  --border-main-color: #EEEEEE;
+  --bg-main-color: #2f303a;
+  --bg-secondary-color: #f5f4fa;
+  --border-main-color: #eeeeee;
 }
 
 body {
@@ -44,10 +42,9 @@ body {
 h2,
 h3 {
   color: var(--primary-text-color);
-  
 }
 
-.container{
+.container {
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
@@ -79,8 +76,9 @@ h3 {
 
 /* nav-list */
 .nav-list {
-margin: 0;
-padding: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
 
   list-style: none;
   font-weight: 500;
@@ -126,14 +124,14 @@ padding: 0;
   text-align: center;
 }
 
-.hero .container{
+.hero .container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
 .hero .title {
-margin-top: 0;
-margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
 
   color: var(--third-text-color);
 }
@@ -158,28 +156,27 @@ margin-bottom: 30px;
 }
 /* !CLOSED hero */
 
-
 /* !advantages list */
-.adv .container{
+.adv .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.adv-title{
+.adv-title {
   margin: 0;
   padding: 0;
 }
 
 .advantages {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 
   list-style: none;
 }
 
 .advantages .title {
-margin-top: 0;
-margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -189,7 +186,7 @@ margin-bottom: 10px;
 }
 
 .advantages .text {
-margin: 0;
+  margin: 0;
 
   color: var(--secondary-text-color);
   font-weight: 400;
@@ -199,16 +196,15 @@ margin: 0;
 }
 /* !CLOSED advantages list */
 
-
 /* !Чем мы занимаемся */
-.work .container{
+.work .container {
   padding-bottom: 94px;
 }
 
 .work .title {
-margin-top: 0;
-margin-bottom: 50px;
-text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
 
   font-weight: 700;
   font-size: 36px;
@@ -217,28 +213,27 @@ text-align: center;
 }
 
 .work .list {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 
   list-style: none;
 }
 /* !CLOSED Чем мы занимаемся */
 
 /* !Наша команда */
-.team{
+.team {
   background: var(--bg-secondary-color);
 }
 
-.team .container{
+.team .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .team .title {
-margin-top: 0;
-margin-bottom: 50px;
-text-align: center;
-
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
 
   font-weight: 700;
   font-size: 36px;
@@ -252,21 +247,21 @@ text-align: center;
   list-style: none;
 }
 
-.team .list-block{
+.team .list-block {
   padding-bottom: 30px;
   width: 270px;
-height: 368px;
-outline: 1px solid green;
+  height: 368px;
+  outline: 1px solid green;
 }
 
-.team .list-img{
+.team .list-img {
   margin-bottom: 30px;
 }
 
 .team .list-title {
-margin-top: 0;
-margin-bottom: 10px;
-text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
 
   font-weight: 500;
   font-size: 16px;
@@ -275,8 +270,8 @@ text-align: center;
 }
 
 .team .list-text {
-margin: 0;
-text-align: center;
+  margin: 0;
+  text-align: center;
 
   color: var(--secondary-text-color);
   font-weight: 400;
@@ -285,7 +280,6 @@ text-align: center;
   letter-spacing: 0.03em;
 }
 /* !CLOSED Наша команда */
-
 
 /* !Футер */
 footer {
@@ -314,16 +308,15 @@ footer {
 }
 /* !CLOSED Футер */
 
-
 /* Страница - "Портфолио" */
 
 /* !Список-фильтр */
-.works .container{
+.works .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.works .works-title{
+.works .works-title {
   margin: 0;
 }
 
@@ -334,13 +327,13 @@ footer {
 }
 
 .filter-link {
-padding: 6px 22px;
-border-radius: 4px;
-border-color: transparent;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-color: transparent;
 
   background-color: #f5f4fa;
   color: var(--primary-text-color);
-    text-decoration: none;
+  text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -360,9 +353,9 @@ border-color: transparent;
   list-style: none;
 }
 
-.examples .examples-list{
+.examples .examples-list {
   width: 370px;
-height: 404px;
+  height: 404px;
   padding-bottom: 20px;
   border: 1px solid var(--border-main-color);
 }
@@ -372,13 +365,13 @@ height: 404px;
   text-decoration: none;
 }
 
-.examples-img{
-margin-bottom: 20px;
+.examples-img {
+  margin-bottom: 20px;
 }
 
 .examples-title {
-margin-top: 0;
-margin-bottom: 4px;
+  margin-top: 0;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -387,7 +380,7 @@ margin-bottom: 4px;
 }
 
 .examples-text {
-margin: 0;
+  margin: 0;
 
   color: var(--secondary-text-color);
   font-weight: 400;
