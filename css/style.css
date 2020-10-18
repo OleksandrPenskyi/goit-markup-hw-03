@@ -35,6 +35,7 @@ font-weight: 700; */
   --border-main-color: #eeeeee;
 }
 
+/* for all page  */
 body {
   font-family: Roboto, sans-serif;
 }
@@ -44,6 +45,7 @@ h3 {
   color: var(--primary-text-color);
 }
 
+/* main container */
 .container {
   width: 1200px;
   margin-left: auto;
@@ -54,14 +56,19 @@ h3 {
   outline: 2px solid red;
 }
 
-.header-flex{
+/* !header */
+/* Flex items for header */
+.nav-flex {
   display: flex;
   align-items: center;
 }
 
-/* Страница - "Студия" */
-/* nav */
-/* Logo */
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* ?Logo */
 .logo {
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -78,8 +85,9 @@ h3 {
 .logo .studio-black {
   color: var(--primary-text-color);
 }
+/* ?CLOSED Logo */
 
-/* nav-list */
+/* ?nav-list */
 .nav-list {
   display: flex;
   margin-top: 0;
@@ -95,7 +103,7 @@ h3 {
   letter-spacing: 0.02em;
 }
 
-.nav-list > .item:not(:last-child){
+.nav-list > .item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -103,14 +111,9 @@ h3 {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
- 
+
   color: var(--primary-text-color);
   text-decoration: none;
-}
-
-.nav-list .link:hover,
-.nav-list .link:focus {
-  color: var(--main-blue-color);
 }
 
 /* active page */
@@ -118,18 +121,19 @@ h3 {
   color: var(--main-blue-color);
 }
 
-
-/* contacts info */
-nav{
-  display: flex;
-  align-items: center;
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--main-blue-color);
 }
+/* ?CLOSED nav-list */
 
-.contacts{
-  margin-left: auto;;
+/* ?contacts info */
+.contacts {
+  margin-left: auto;
 }
 
 .contacts .link {
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -141,7 +145,7 @@ nav{
   letter-spacing: 0.02em;
 }
 
-.contacts .link:not(:last-child){
+.contacts .link:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -149,8 +153,10 @@ nav{
 .contacts .link:focus {
   color: var(--main-blue-color);
 }
-/* closed header */
+/* !CLOSED contacts info */
+/* !CLOSED header */
 
+/* !main part */
 /* !hero */
 .hero {
   background: var(--bg-main-color);
