@@ -218,13 +218,24 @@ h3 {
 }
 
 .advantages {
+  display: flex;
+  flex-wrap: wrap; /*вдруг добавят еще разделов*/
+
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.advantages .title {
+.advantages .advantages-list {
+  width: calc((100% - 90px) / 4);
+}
+
+.advantages .advantages-list:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.advantages .advantages-title {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -234,7 +245,7 @@ h3 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.advantages .text {
+.advantages .advantages-text {
   margin: 0;
 
   color: var(--secondary-text-color);
@@ -263,7 +274,7 @@ h3 {
 
 .work .work-list {
   display: flex;
-  flex-wrap: wrap; /*если теоретически добавят картинок*/
+  flex-wrap: wrap; /*если теоретически добавят еще картинок*/
 
   margin: 0;
   padding: 0;
