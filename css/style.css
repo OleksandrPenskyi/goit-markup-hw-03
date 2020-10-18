@@ -261,12 +261,29 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-.work .list {
+.work .work-list {
+  display: flex;
+  flex-wrap: wrap; /*если теоретически добавят картинок*/
+
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
+
+.work-list .list-item {
+  width: calc((100% - 60px) / 3);
+}
+
+/* дать всем эдементам правый маржин, кроме каждого кратного 3-м (3й, 6й, 9й) */
+.work-list .list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.work-list img {
+  display: block;
+}
+
 /* !CLOSED Чем мы занимаемся */
 
 /* !Наша команда */
