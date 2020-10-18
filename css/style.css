@@ -234,8 +234,7 @@ h3 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
-.advantages .text {
+1 .advantages .text {
   margin: 0;
 
   color: var(--secondary-text-color);
