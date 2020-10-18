@@ -33,11 +33,14 @@ font-weight: 700; */
   --bg-main-color: #2f303a;
   --bg-secondary-color: #f5f4fa;
   --border-main-color: #eeeeee;
+
+  --main-font-family: Roboto, sans-serif;
+  --secondary-font-family: Raleway, sans-serif;
 }
 
 /* for all page  */
 body {
-  font-family: Roboto, sans-serif;
+  font-family: var(--main-font-family);
 }
 
 h2,
@@ -71,7 +74,7 @@ h3 {
 /* ?Logo */
 .logo {
   text-decoration: none;
-  font-family: Raleway, sans-serif;
+  font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -185,6 +188,12 @@ h3 {
 }
 
 .hero .link {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
+
   background-color: var(--main-blue-color);
   color: var(--third-text-color);
   font-weight: 700;
@@ -192,6 +201,8 @@ h3 {
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-decoration: none;
+
+  border-radius: 4px;
 }
 /* !CLOSED hero */
 
