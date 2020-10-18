@@ -396,27 +396,47 @@ footer {
   color: var(--third-text-color);
 }
 
-/* Примеры работ */
+/* !Примеры работ */
 .examples {
+  display: flex;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+/* Ширина элемента списка в % */
 .examples .examples-list {
-  width: 370px;
-  height: 404px;
+  width: calc((100% - 60px) / 3);
   padding-bottom: 20px;
+
   border: 1px solid var(--border-main-color);
 }
 
-.examples-link {
-  display: block;
-  text-decoration: none;
+/* правый маржин для всех элементов списка, кроме каждого 3-го, 6-го, 9-го и тд */
+.examples .examples-list:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+/* маржин ботом для всех элементов списка, кроме 3-х последних элементов списка*/
+.examples .examples-list:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
 
 .examples-img {
-  margin-bottom: 20px;
+  display: block;
+}
+
+.examples-link {
+  text-decoration: none;
+}
+
+.examples .text-block {
+  margin-top: 20px;
+
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .examples-title {
@@ -438,3 +458,4 @@ footer {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
+/* !CLOSED Примеры работ */
