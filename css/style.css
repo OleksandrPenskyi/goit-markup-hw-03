@@ -279,7 +279,8 @@ h3 {
 
 .work .work-list {
   display: flex;
-  flex-wrap: wrap; /*если теоретически добавят еще картинок*/
+  flex-wrap: wrap;
+  /* если теоретически добавят еще картинок */
 
   margin: 0;
   padding: 0;
@@ -333,9 +334,8 @@ h3 {
 .team-list .list-item {
   width: calc((100% - 90px) / 4);
   padding-bottom: 30px;
-
-  border: 1px solid var(--border-main-color);
   background: var(--bg-card-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .list-item:not(:nth-child(4n)) {
@@ -375,8 +375,13 @@ h3 {
 /* !CLOSED Наша команда */
 
 /* !Футер */
-footer {
+.footer {
   background: var(--bg-main-color);
+}
+
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo .studio-white {
@@ -384,6 +389,8 @@ footer {
 }
 
 .company-address {
+  margin-top: 20px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -396,9 +403,15 @@ footer {
 }
 
 .company-address .link {
+  display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+
+.company-address .link {
+  margin-top: 9px;
+}
+
 /* !CLOSED Футер */
 
 /* Страница - "Портфолио" */
