@@ -30,8 +30,11 @@ font-weight: 700; */
   --secondary-text-color: #757575;
   --third-text-color: #ffffff;
   --main-blue-color: #2196f3;
+
   --bg-main-color: #2f303a;
   --bg-secondary-color: #f5f4fa;
+  --bg-card-color: #ffffff;
+
   --border-main-color: #eeeeee;
 
   --main-font-family: Roboto, sans-serif;
@@ -73,12 +76,13 @@ h3 {
 
 /* ?Logo */
 .logo {
-  text-decoration: none;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  text-decoration: none;
 }
 
 .logo .web {
@@ -99,11 +103,12 @@ h3 {
   margin-right: 0;
   padding: 0;
 
-  list-style: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  list-style: none;
 }
 
 .nav-list > .item:not(:last-child) {
@@ -294,7 +299,6 @@ h3 {
 .work-list img {
   display: block;
 }
-
 /* !CLOSED Чем мы занимаемся */
 
 /* !Наша команда */
@@ -318,43 +322,55 @@ h3 {
   letter-spacing: 0.03em;
 }
 
-.team .list {
+.team .team-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.team .list-block {
+.team-list .list-item {
+  width: calc((100% - 90px) / 4);
   padding-bottom: 30px;
-  width: 270px;
-  height: 368px;
-  outline: 1px solid green;
+
+  border: 1px solid var(--border-main-color);
+  background: var(--bg-card-color);
 }
 
-.team .list-img {
+.team-list .list-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.team-list .list-img {
+  display: block;
   margin-bottom: 30px;
 }
 
-.team .list-title {
+.team-list .list-title {
   margin-top: 0;
   margin-bottom: 10px;
-  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  text-align: center;
 }
 
-.team .list-text {
+.team-list .list-text {
   margin: 0;
-  text-align: center;
 
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  text-align: center;
 }
 /* !CLOSED Наша команда */
 
