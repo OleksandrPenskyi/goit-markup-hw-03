@@ -467,6 +467,7 @@ footer {
   padding-bottom: 20px;
 
   border: 1px solid var(--border-main-color);
+  background: var(--bg-card-color);
 }
 
 /* правый маржин для всех элементов списка, кроме каждого 3-го, 6-го, 9-го и тд */
