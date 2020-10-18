@@ -370,9 +370,20 @@ footer {
 }
 
 .works .filter {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 0;
+  margin-bottom: 34px;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0;
+
   list-style: none;
+}
+
+.filter .filter-list:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-link {
@@ -393,6 +404,7 @@ footer {
 .filter-link:focus {
   background-color: var(--main-blue-color);
   color: var(--third-text-color);
+  border-color: transparent;
 }
 
 /* !Примеры работ */
