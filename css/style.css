@@ -59,7 +59,7 @@ h3 {
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* !header */
@@ -220,6 +220,8 @@ h3 {
 .adv-title {
   margin: 0;
   padding: 0;
+
+  text-align: center;
 }
 
 .advantages {
@@ -279,8 +281,7 @@ h3 {
 
 .work .work-list {
   display: flex;
-  flex-wrap: wrap;
-  /* если теоретически добавят еще картинок */
+  flex-wrap: wrap; /* если теоретически добавят еще картинок */
 
   margin: 0;
   padding: 0;
@@ -424,6 +425,8 @@ h3 {
 
 .works .works-title {
   margin: 0;
+
+  text-align: center;
 }
 
 .works .filter {
@@ -448,7 +451,7 @@ h3 {
   border-radius: 4px;
   border-color: transparent;
 
-  background-color: #f5f4fa;
+  background-color: var(--bg-secondary-color); */
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -479,7 +482,6 @@ h3 {
   width: calc((100% - 60px) / 3);
   padding-bottom: 20px;
 
-  border: 1px solid var(--border-main-color);
   background: var(--bg-card-color);
 }
 
@@ -493,12 +495,14 @@ h3 {
   margin-bottom: 30px;
 }
 
-.examples-img {
+.examples-link {
   display: block;
+
+  text-decoration: none;
 }
 
-.examples-link {
-  text-decoration: none;
+.examples-img {
+  display: block;
 }
 
 .examples .text-block {
