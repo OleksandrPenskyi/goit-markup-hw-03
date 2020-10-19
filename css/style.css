@@ -36,6 +36,7 @@ font-weight: 700; */
   --bg-card-color: #ffffff;
 
   --border-main-color: #eeeeee;
+  --border-header-color: #ececec;
 
   --main-font-family: Roboto, sans-serif;
   --secondary-font-family: Raleway, sans-serif;
@@ -64,6 +65,10 @@ h3 {
 
 /* !header */
 /* Flex items for header */
+.header {
+  border-bottom: 1px solid var(--border-header-color);
+}
+
 .nav-flex {
   display: flex;
   align-items: center;
@@ -167,13 +172,11 @@ h3 {
 /* !main part */
 /* !hero */
 .hero {
-  background: var(--bg-main-color);
-  text-align: center;
-}
-
-.hero .container {
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background: var(--bg-main-color);
+  text-align: center;
 }
 
 .hero .title {
@@ -212,7 +215,7 @@ h3 {
 /* !CLOSED hero */
 
 /* !advantages list */
-.adv .container {
+.adv {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -264,7 +267,7 @@ h3 {
 /* !CLOSED advantages list */
 
 /* !Чем мы занимаемся */
-.work .container {
+.work {
   padding-bottom: 94px;
 }
 
@@ -305,12 +308,10 @@ h3 {
 
 /* !Наша команда */
 .team {
-  background: var(--bg-secondary-color);
-}
-
-.team .container {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background: var(--bg-secondary-color);
 }
 
 .team .title {
@@ -377,12 +378,10 @@ h3 {
 
 /* !Футер */
 .footer {
-  background: var(--bg-main-color);
-}
-
-.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background: var(--bg-main-color);
 }
 
 .logo .studio-white {
@@ -418,7 +417,7 @@ h3 {
 /* Страница - "Портфолио" */
 
 /* !Список-фильтр */
-.works .container {
+.works {
   padding-top: 94px;
   padding-bottom: 94px;
 }
