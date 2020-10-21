@@ -225,6 +225,10 @@ h3 {
   padding: 0;
 
   text-align: center;
+
+  /* Спрятать текст h2 (не работает в геометрии), но оставить его для читалок */
+  font-size: 0;
+  visibility: hidden;
 }
 
 .advantages {
@@ -426,6 +430,10 @@ h3 {
   margin: 0;
 
   text-align: center;
+
+  /* Спрятать текст h1 (не работает в геометрии), но оставить его для читалок */
+  font-size: 0;
+  visibility: hidden;
 }
 
 .works .filter {
@@ -479,9 +487,6 @@ h3 {
 /* Ширина элемента списка в % */
 .examples .examples-list {
   width: calc((100% - 60px) / 3);
-  padding-bottom: 20px;
-
-  border: 1px solid var(--border-main-color);
 
   background: var(--bg-card-color);
 }
@@ -504,14 +509,17 @@ h3 {
 
 .examples-img {
   display: block;
-  width: 100%;
 }
 
 .examples .text-block {
-  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 
-  margin-left: 24px;
-  margin-right: 24px;
+  border-left: 1px solid var(--border-main-color);
+  border-bottom: 1px solid var(--border-main-color);
+  border-right: 1px solid var(--border-main-color);
 }
 
 .examples-title {
