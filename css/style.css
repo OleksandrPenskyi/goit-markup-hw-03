@@ -63,6 +63,18 @@ h3 {
   /* outline: 2px solid red; */
 }
 
+/* Спрятать текст h2/h1 (не работает в геометрии), но оставить его для читалок */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* !header */
 /* Flex items for header */
 .header {
@@ -218,17 +230,6 @@ h3 {
 .adv {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.adv-title {
-  margin: 0;
-  padding: 0;
-
-  text-align: center;
-
-  /* Спрятать текст h2 (не работает в геометрии), но оставить его для читалок */
-  font-size: 0;
-  visibility: hidden;
 }
 
 .advantages {
@@ -424,16 +425,6 @@ h3 {
 .works {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.works .works-title {
-  margin: 0;
-
-  text-align: center;
-
-  /* Спрятать текст h1 (не работает в геометрии), но оставить его для читалок */
-  font-size: 0;
-  visibility: hidden;
 }
 
 .works .filter {
